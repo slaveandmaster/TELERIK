@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homework - Forms</title>
+	<style type="text/css">
+	label {
+		float: right;
+		font-weight: bold;
+	}
+	</style>
+</head>
+<body>
+<form action="#" method="post">
+	<table border="1px">
+		<colgroup>
+			<col span="1" width="170px">
+		</colgroup>
+		<tr>
+			<td>
+			<label for="lname">Last Name</label>
+			</td>
+			<td colspan="3">
+			<input type="text" name="lastname" id="lname" size="30"/>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<label for="fname">First Name</label>
+			</td>
+			<td colspan="3">
+			<input type="text" name="firstname" id="fname" size="30"/>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<label for="addr">Address</label>
+			</td>
+			<td colspan="3">
+			<textarea name="address" id="addr" rows="3" cols="17" size="30"></textarea>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<label for="city">City</label>
+			</td>
+			<td>
+			<input type="text" name="city" id="city" size="30"/>
+			</td>
+			<td>
+			<label for="state">State</label>	
+			</td>
+			<td>
+			<input type="text" name="state" id="state" size="5"/>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<label for="zip">Zip/Postal Code</label>	
+			</td>
+			<td colspan="3">
+			<input type="text" name="zip_code" id="zip" size="10"/>	
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<label>Country</label>	
+			</td>
+			<td colspan="3">
+			<select name="country">
+				<option value="1">England</option>
+				<option value="2">Germany</option>
+				<option value="3" selected="selected">Bulgaria</option>
+			</select>	
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<label>Phone(country code,area code,number)</label>	
+			</td>
+			<td colspan="3">
+			(+<input type="text" name="code" value="359" size="5"/>)<input type="text" name="area" size="5"/>-<input type="text" name="number" size="20"/>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<label for="mail">Email</label>	
+			</td>
+			<td colspan="3">
+			<input type="text" name="email" id="mail" size="30"/>	
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<label>Birth date</label>	
+			</td>
+			<td colspan="3">
+			Month<input type="text" name="month" size="3"/> Day<input type="text" name="day" size="3"/>Year (4 digit)<input type="text" name="year" size="5"/>	
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<label>Gender</label>
+			</td>
+			<td colspan="3">
+			<select name="gender">
+				<option value="1" selected="selected">Male</option>
+				<option value="2">Female</option>
+			</select>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<label>Starting date</label>
+			</td>
+			<td colspan="3">
+			<input type="radio" name="sdate" checked="1" value="Sprintg 2006"/>Spring 2006 <input type="radio" name="sdate" value="Summer 2006"/>Summer 2006
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<label>Commnents/Questions</label>	
+			</td>
+			<td colspan="3">
+			<textarea rows="5" cols="17"></textarea>	
+			</td>
+		</tr>
+		<tr>
+			<td colspan="4" align="center">
+			<input type="button" name="submit" value="Submit"/>
+			<input type="reset" name="reset" value="Clear This Form"/>
+
+			</td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>
